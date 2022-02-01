@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Try to find a portable way of getting rid of
 # any stray carriage returns
 if which dos2unix ; then
@@ -28,6 +27,7 @@ if [[ "$?" -ne 0 ]]; then
 fi
 echo ""
 mkdir -p test/out
+sleep 1s
 
 echo "========================================="
 

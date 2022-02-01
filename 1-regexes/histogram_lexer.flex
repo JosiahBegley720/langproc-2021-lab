@@ -17,19 +17,22 @@ extern "C" int fileno(FILE *stream);
 /* End the embedded code section. */
 %}
 
-
+/* TODO: get value out of yytext and into yylval.numberValue */
+/* TODO: get value out of yytext and into yylval.wordValue */
 %%
 
-[0-9]+          { fprintf(stderr, "Number : %s\n", yytext); /* TODO: get value out of yytext and into yylval.numberValue */ yylval.numberValue = yytext;  return Number; }
+(-?)([0-9]+)(.?)(([0-9]+)?)        { fprintf(stderr, "Number : %s\n", yytext);  yylval.numberValue = atof(yytext);  return Number; }
 
-[a-z]+          { fprintf(stderr, "Word : %s\n", yytext); /* TODO: get value out of yytext and into yylval.wordValue */; *yylval.wordValue = yytext; return Word; }
+[a-zA-Z]+          { fprintf(stderr, "Word : %s\n", yytext); yylval.wordValue = new std::string; *yylval.wordValue = yytext; return Word; }
+
+\[([\x00-\xFF]+)\]      { fprintf(stderr, "Word : %s\n", yytext); yylval.wordValue = new std::string; *yylval.wordValue = yytext; return Word; } 
 
 \n              { fprintf(stderr, "Newline\n"); }
 
+. {fprintf(stderr, "Word : %s\n", yytext);}
 
 %%
 
-/* Error handler. This will get called if none of the rules match. */
 void yyerror (char const *s)
 {
   fprintf (stderr, "Flex Error: %s\n", s); /* s is the text that wasn't matched */
