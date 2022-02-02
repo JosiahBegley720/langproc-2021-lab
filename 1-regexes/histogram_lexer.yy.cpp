@@ -364,11 +364,11 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[23] =
+static const flex_int16_t yy_accept[24] =
     {   0,
         0,    0,    8,    6,    5,    6,    6,    1,    3,    6,
-        0,    1,    1,    1,    0,    1,    3,    0,    4,    1,
-        2,    0
+        0,    1,    0,    1,    1,    3,    0,    0,    0,    4,
+        2,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -376,17 +376,17 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    3,    1,    3,    4,    5,    6,    6,    6,
-        6,    6,    6,    6,    6,    6,    6,    1,    1,    1,
-        1,    1,    1,    1,    7,    7,    7,    7,    7,    7,
-        7,    7,    7,    7,    7,    7,    7,    7,    7,    7,
-        7,    7,    7,    7,    7,    7,    7,    7,    7,    7,
-        8,    1,    9,    1,    1,    1,    7,    7,    7,    7,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    3,
+        4,    1,    5,    1,    5,    6,    7,    8,    9,    9,
+        9,    9,    9,    9,    9,    9,    9,    1,    1,    1,
+        1,    1,    1,    1,   10,   10,   10,   10,   10,   10,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,   10,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,   10,
+       11,    1,   12,    1,    1,    1,   10,   10,   10,   10,
 
-        7,    7,    7,    7,    7,    7,    7,    7,    7,    7,
-        7,    7,    7,    7,    7,    7,    7,    7,    7,    7,
-        7,    7,    1,    1,    1,    1,    1,    1,    1,    1,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,   10,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,   10,
+       10,   10,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -403,39 +403,44 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[10] =
+static const YY_CHAR yy_meta[13] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1
+        1,    1,    1,    1,    1,    1,    2,    3,    3,    1,
+        1,    1
     } ;
 
-static const flex_int16_t yy_base[24] =
+static const flex_int16_t yy_base[28] =
     {   0,
-        0,    0,   28,   29,   29,    6,   21,    9,   19,   16,
-       18,    0,   17,   16,   15,    0,   13,   10,    9,   11,
-       10,   29,   10
+        0,    0,   32,   44,   44,    5,   24,    9,   17,   16,
+       19,    0,    0,    0,    0,   15,   26,   12,   11,   44,
+        0,    0,   44,   37,   40,   19,   18
     } ;
 
-static const flex_int16_t yy_def[24] =
+static const flex_int16_t yy_def[28] =
     {   0,
-       22,    1,   22,   22,   22,   22,   22,   22,   22,   23,
-       22,    8,   22,   22,   22,    8,   22,   23,   23,   22,
-       22,    0,   22
+       23,    1,   23,   23,   23,   23,   24,   23,   23,   25,
+       24,    8,   26,   27,    8,   23,   25,   23,   23,   23,
+       26,   27,    0,   23,   23,   23,   23
     } ;
 
-static const flex_int16_t yy_nxt[39] =
+static const flex_int16_t yy_nxt[57] =
     {   0,
-        4,    5,    6,    7,    4,    8,    9,   10,    4,   11,
-       18,   12,   14,   15,   16,   21,   20,   19,   19,   17,
-       21,   20,   13,   13,   19,   17,   13,   22,    3,   22,
-       22,   22,   22,   22,   22,   22,   22,   22
+        4,    5,    4,    4,    6,    4,    4,    7,    8,    9,
+       10,    4,   11,   12,   14,   13,   15,   15,   18,   19,
+       22,   21,   20,   20,   16,   13,   16,   20,   23,   23,
+       13,   23,   23,   23,   23,   23,   23,   20,   11,   11,
+       17,   17,   17,    3,   23,   23,   23,   23,   23,   23,
+       23,   23,   23,   23,   23,   23
     } ;
 
-static const flex_int16_t yy_chk[39] =
+static const flex_int16_t yy_chk[57] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    6,
-       23,    6,    8,    8,    8,   21,   20,   19,   18,   17,
-       15,   14,   13,   11,   10,    9,    7,    3,   22,   22,
-       22,   22,   22,   22,   22,   22,   22,   22
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    6,    6,    8,    8,    8,    8,   10,   10,
+       27,   26,   19,   18,   16,   11,    9,   10,   17,   17,
+        7,    3,    0,    0,    0,    0,    0,   17,   24,   24,
+       25,   25,   25,   23,   23,   23,   23,   23,   23,   23,
+       23,   23,   23,   23,   23,   23
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -468,10 +473,10 @@ char *yytext;
 extern "C" int fileno(FILE *stream);
 
 /* End the embedded code section. */
-#line 472 "histogram_lexer.yy.cpp"
+#line 477 "histogram_lexer.yy.cpp"
 /* TODO: get value out of yytext and into yylval.numberValue */
 /* TODO: get value out of yytext and into yylval.wordValue */
-#line 475 "histogram_lexer.yy.cpp"
+#line 480 "histogram_lexer.yy.cpp"
 
 #define INITIAL 0
 
@@ -691,7 +696,7 @@ YY_DECL
 #line 22 "histogram_lexer.flex"
 
 
-#line 695 "histogram_lexer.yy.cpp"
+#line 700 "histogram_lexer.yy.cpp"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -718,13 +723,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 23 )
+				if ( yy_current_state >= 24 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 29 );
+		while ( yy_base[yy_current_state] != 44 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -793,25 +798,39 @@ case 4:
 /* rule 4 can match eol */
 YY_RULE_SETUP
 #line 57 "histogram_lexer.flex"
-{ fprintf(stderr, "Word : %s\n", yytext);} 
+{ fprintf(stderr, "Word : %s\n", yytext);
+std::string input = "";
+std::string output = "";
+while(*yytext != NULL){
+   input.push_back((*yytext));
+   *(++yytext);
+}
+
+for(int i = 1; i < input.size()-1; i++){
+   output.push_back(input[i]);
+}
+
+const char *mychar = output.c_str();
+
+yylval.wordValue = new std::string; *yylval.wordValue = mychar; return Word;} 
 	YY_BREAK
 case 5:
 /* rule 5 can match eol */
 YY_RULE_SETUP
-#line 60 "histogram_lexer.flex"
+#line 74 "histogram_lexer.flex"
 { fprintf(stderr, "Newline\n"); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 62 "histogram_lexer.flex"
+#line 76 "histogram_lexer.flex"
 {fprintf(stderr, "Word : %s\n", yytext);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 64 "histogram_lexer.flex"
+#line 78 "histogram_lexer.flex"
 ECHO;
 	YY_BREAK
-#line 815 "histogram_lexer.yy.cpp"
+#line 834 "histogram_lexer.yy.cpp"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1108,7 +1127,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 23 )
+			if ( yy_current_state >= 24 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1136,11 +1155,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 23 )
+		if ( yy_current_state >= 24 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 22);
+	yy_is_jam = (yy_current_state == 23);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1816,7 +1835,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 64 "histogram_lexer.flex"
+#line 78 "histogram_lexer.flex"
 
 
 void yyerror (char const *s)

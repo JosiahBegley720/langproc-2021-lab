@@ -21,7 +21,7 @@ extern "C" int fileno(FILE *stream);
 /* TODO: get value out of yytext and into yylval.wordValue */
 %%
 
-[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)        { fprintf(stderr, "Number : %s\n", yytext);  yylval.numberValue = atof(yytext);  return Number; }
+[+-]?([1-9][0-9]?+\.?[0-9]*)        { fprintf(stderr, "Number : %s\n", yytext);  yylval.numberValue = atof(yytext);  return Number; }
 
 [+-]?([0-9]+\/[0-9]+)        { fprintf(stderr, "Number : %s\n", yytext);
 
@@ -54,7 +54,21 @@ return Number; }
 [a-zA-Z]+          { fprintf(stderr, "Word : %s\n", yytext); yylval.wordValue = new std::string; *yylval.wordValue = yytext; return Word; }
 
 
-\[[\x00-\xFF]*\]      { fprintf(stderr, "Word : %s\n", yytext);} 
+(\[[^(\])]*\]|\[\(\]|\[\)\])  { fprintf(stderr, "Word : %s\n", yytext);
+std::string input = "";
+std::string output = "";
+while(*yytext != NULL){
+   input.push_back((*yytext));
+   *(++yytext);
+}
+
+for(int i = 1; i < input.size()-1; i++){
+   output.push_back(input[i]);
+}
+
+const char *mychar = output.c_str();
+
+yylval.wordValue = new std::string; *yylval.wordValue = mychar; return Word;} 
 
 
 \n              { fprintf(stderr, "Newline\n"); }

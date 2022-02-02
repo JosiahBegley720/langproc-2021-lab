@@ -44,14 +44,14 @@ int main()
             // TODO: add yylval.wordValue to histogram
             histogram_type::const_iterator got = histogram.find(*yylval.wordValue);
             
-            if (got == histogram.end())
+            if (got == histogram.end()){
                 histogram.insert({*yylval.wordValue, 1});
-            else
+            }
+            else{
                 histogram.at(*yylval.wordValue) += 1;
-
+            }
             // TODO: Free the pointer yylval.wordValue to stop leaks
             free(yylval.wordValue);
-            yylval.wordValue = NULL;
         }else{
             assert(0); // There are only three token types.
             return 1;
