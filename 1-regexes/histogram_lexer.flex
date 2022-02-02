@@ -21,7 +21,7 @@ extern "C" int fileno(FILE *stream);
 /* TODO: get value out of yytext and into yylval.wordValue */
 %%
 
-(-?)([0-9]+)(.?)(([0-9]+)?)        { fprintf(stderr, "Number : %s\n", yytext);  yylval.numberValue = atof(yytext);  return Number; }
+[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)        { fprintf(stderr, "Number : %s\n", yytext);  yylval.numberValue = atof(yytext);  return Number; }
 
 [a-zA-Z]+          { fprintf(stderr, "Word : %s\n", yytext); yylval.wordValue = new std::string; *yylval.wordValue = yytext; return Word; }
 
