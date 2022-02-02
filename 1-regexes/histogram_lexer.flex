@@ -23,9 +23,39 @@ extern "C" int fileno(FILE *stream);
 
 [+-]?([0-9]+\.?[0-9]*|\.[0-9]+)        { fprintf(stderr, "Number : %s\n", yytext);  yylval.numberValue = atof(yytext);  return Number; }
 
+[+-]?([0-9]+\/[0-9]+)        { fprintf(stderr, "Number : %s\n", yytext);
+
+int i = 0;
+std::string num = "";
+std::string den = "";
+std::string input = "";
+
+
+while(*yytext != NULL){
+   input.push_back((*yytext));
+   *(++yytext);
+}
+
+while(input[i] != 47){
+   num.push_back(input[i]);
+   i++;
+}
+i++;
+
+while(i < input.size()){
+   den.push_back(input[i]);
+   i++;
+}
+
+yylval.numberValue = std::stod(num)/std::stod(den);
+
+return Number; }
+
 [a-zA-Z]+          { fprintf(stderr, "Word : %s\n", yytext); yylval.wordValue = new std::string; *yylval.wordValue = yytext; return Word; }
 
-\[([\x00-\xFF]+)\]      { fprintf(stderr, "Word : %s\n", yytext); yylval.wordValue = new std::string; *yylval.wordValue = yytext; return Word; } 
+
+\[[\x00-\xFF]*\]      { fprintf(stderr, "Word : %s\n", yytext);} 
+
 
 \n              { fprintf(stderr, "Newline\n"); }
 
