@@ -51,7 +51,6 @@ inline TreePtr Input(std::string id)
 inline TreePtr Output(TreePtr expr)
 { return std::make_shared<Tree>("Output", expr); }
 
-
 inline TreePtr Add(TreePtr left, TreePtr right)
 { return std::make_shared<Tree>("Add", left, right); }
 

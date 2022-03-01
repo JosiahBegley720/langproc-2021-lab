@@ -52,10 +52,10 @@ for i in test/programs/*; do
     echo "==========================="
     echo ""
     echo "Input file : ${i}"
-    echo "Testing $b"
-    echo "  params : ${PARAMS}"
+    echo "Testing $b, params = ${PARAMS}"
 
     bin/compiler $i/in.code.txt \
+        < $i/in.input.txt \
         > working/$b/compiled.txt
 
     bin/vm working/$b/compiled.txt ${PARAMS}  \
