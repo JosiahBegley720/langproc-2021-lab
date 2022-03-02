@@ -1,0 +1,57 @@
+Src: param _res_0 0
+Src: const _zero_1 0 
+Src: beq _res_0 _zero_1 _ELSE_2
+Src: param _res_0 1
+Src: beq _zero_1 _zero_1 _ENDIF_3
+Src: :_ELSE_2
+Src: param _res_0 2
+Src: :_ENDIF_3
+Src: const _zero_4 0 
+Src: beq _res_0 _zero_4 _ELSE_5
+Src: param _res_0 3
+Src: const _zero_6 0 
+Src: beq _res_0 _zero_6 _ELSE_7
+Src: param _res_0 4
+Src: beq _zero_6 _zero_6 _ENDIF_8
+Src: :_ELSE_7
+Src: param _res_0 5
+Src: :_ENDIF_8
+Src: beq _zero_4 _zero_4 _ENDIF_9
+Src: :_ELSE_5
+Src: param _res_0 6
+Src: const _zero_10 0 
+Src: beq _res_0 _zero_10 _ELSE_11
+Src: param _res_0 7
+Src: beq _zero_10 _zero_10 _ENDIF_12
+Src: :_ELSE_11
+Src: param _res_0 8
+Src: :_ENDIF_12
+Src: :_ENDIF_9
+Src: halt _res_0
+Exec 0:param _res_0 0, {}
+Exec 1:const _zero_1 0, { _res_0:1}
+Exec 2:, { _res_0:1 _zero_1:0}
+getReg(_res_0)
+getReg(_zero_1)
+Exec 3:param _res_0 1, { _res_0:1 _zero_1:0}
+Exec 4:, { _res_0:1 _zero_1:0}
+getReg(_zero_1)
+getReg(_zero_1)
+Exec 6:const _zero_4 0, { _res_0:1 _zero_1:0}
+Exec 7:, { _res_0:1 _zero_1:0 _zero_4:0}
+getReg(_res_0)
+getReg(_zero_4)
+Exec 8:param _res_0 3, { _res_0:1 _zero_1:0 _zero_4:0}
+Exec 9:const _zero_6 0, { _res_0:3 _zero_1:0 _zero_4:0}
+Exec 10:, { _res_0:3 _zero_1:0 _zero_4:0 _zero_6:0}
+getReg(_res_0)
+getReg(_zero_6)
+Exec 11:param _res_0 4, { _res_0:3 _zero_1:0 _zero_4:0 _zero_6:0}
+Exec 12:, { _res_0:4 _zero_1:0 _zero_4:0 _zero_6:0}
+getReg(_zero_6)
+getReg(_zero_6)
+Exec 14:, { _res_0:4 _zero_1:0 _zero_4:0 _zero_6:0}
+getReg(_zero_4)
+getReg(_zero_4)
+Exec 21:, { _res_0:4 _zero_1:0 _zero_4:0 _zero_6:0}
+getReg(_res_0)

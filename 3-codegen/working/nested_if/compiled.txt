@@ -1,0 +1,30 @@
+param _res_0 0
+const _zero_1 0 
+beq _res_0 _zero_1 _ELSE_2
+param _res_0 1
+beq _zero_1 _zero_1 _ENDIF_3
+:_ELSE_2
+param _res_0 2
+:_ENDIF_3
+const _zero_4 0 
+beq _res_0 _zero_4 _ELSE_5
+param _res_0 3
+const _zero_6 0 
+beq _res_0 _zero_6 _ELSE_7
+param _res_0 4
+beq _zero_6 _zero_6 _ENDIF_8
+:_ELSE_7
+param _res_0 5
+:_ENDIF_8
+beq _zero_4 _zero_4 _ENDIF_9
+:_ELSE_5
+param _res_0 6
+const _zero_10 0 
+beq _res_0 _zero_10 _ELSE_11
+param _res_0 7
+beq _zero_10 _zero_10 _ENDIF_12
+:_ELSE_11
+param _res_0 8
+:_ENDIF_12
+:_ENDIF_9
+halt _res_0

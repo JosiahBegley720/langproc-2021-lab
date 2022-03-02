@@ -1,0 +1,17 @@
+Src: param _res_0 0
+Src: const _zero_1 0 
+Src: beq _res_0 _zero_1 _ELSE_2
+Src: param _res_0 1
+Src: beq _zero_1 _zero_1 _ENDIF_3
+Src: :_ELSE_2
+Src: param _res_0 2
+Src: :_ENDIF_3
+Src: halt _res_0
+Exec 0:param _res_0 0, {}
+Exec 1:const _zero_1 0, { _res_0:0}
+Exec 2:, { _res_0:0 _zero_1:0}
+getReg(_res_0)
+getReg(_zero_1)
+Exec 5:param _res_0 2, { _res_0:0 _zero_1:0}
+Exec 6:, { _res_0:7 _zero_1:0}
+getReg(_res_0)

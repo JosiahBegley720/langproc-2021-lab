@@ -1,0 +1,9 @@
+:_LOOP_1
+const _res_0 0
+const _zero_2 0 
+beq _res_0 _zero_2 _EXIT_3
+const _res_0 1
+beq _zero_2 _zero_2 _LOOP_1
+:_EXIT_3
+const _res_0 17
+halt _res_0

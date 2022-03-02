@@ -1,0 +1,38 @@
+param _res_0 0
+const _zero_1 0
+add a _res_0 _zero_1
+param _res_0 1
+const _zero_2 0
+add b _res_0 _zero_2
+const _res_0 0
+const _zero_3 0
+add acc _res_0 _zero_3
+:_LOOP_4
+const _zero_5 0
+add _res_0 b _zero_5
+const _zero_6 0 
+beq _res_0 _zero_6 _EXIT_7
+const _zero_8 0
+const _zero_9 0
+add _res_0 acc _zero_9
+add _res_10 _res_0 _zero_8
+const _zero_11 0
+add _res_0 a _zero_11
+add _res_12 _res_0 _zero_8
+add _res_0 _res_10 _res_12
+const _zero_13 0
+add acc _res_0 _zero_13
+const _zero_14 0
+const _zero_15 0
+add _res_0 b _zero_15
+add _res_16 _res_0 _zero_14
+const _res_0 -1
+add _res_17 _res_0 _zero_14
+add _res_0 _res_16 _res_17
+const _zero_18 0
+add b _res_0 _zero_18
+beq _zero_6 _zero_6 _LOOP_4
+:_EXIT_7
+const _zero_19 0
+add _res_0 acc _zero_19
+halt _res_0

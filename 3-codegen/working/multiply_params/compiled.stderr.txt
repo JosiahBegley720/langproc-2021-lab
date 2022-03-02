@@ -1,0 +1,431 @@
+Src: param _res_0 0
+Src: const _zero_1 0
+Src: add a _res_0 _zero_1
+Src: param _res_0 1
+Src: const _zero_2 0
+Src: add b _res_0 _zero_2
+Src: const _res_0 0
+Src: const _zero_3 0
+Src: add acc _res_0 _zero_3
+Src: :_LOOP_4
+Src: const _zero_5 0
+Src: add _res_0 b _zero_5
+Src: const _zero_6 0 
+Src: beq _res_0 _zero_6 _EXIT_7
+Src: const _zero_8 0
+Src: const _zero_9 0
+Src: add _res_0 acc _zero_9
+Src: add _res_10 _res_0 _zero_8
+Src: const _zero_11 0
+Src: add _res_0 a _zero_11
+Src: add _res_12 _res_0 _zero_8
+Src: add _res_0 _res_10 _res_12
+Src: const _zero_13 0
+Src: add acc _res_0 _zero_13
+Src: const _zero_14 0
+Src: const _zero_15 0
+Src: add _res_0 b _zero_15
+Src: add _res_16 _res_0 _zero_14
+Src: const _res_0 -1
+Src: add _res_17 _res_0 _zero_14
+Src: add _res_0 _res_16 _res_17
+Src: const _zero_18 0
+Src: add b _res_0 _zero_18
+Src: beq _zero_6 _zero_6 _LOOP_4
+Src: :_EXIT_7
+Src: const _zero_19 0
+Src: add _res_0 acc _zero_19
+Src: halt _res_0
+Exec 0:param _res_0 0, {}
+Exec 1:const _zero_1 0, { _res_0:8}
+Exec 2:add a _res_0 _zero_1, { _res_0:8 _zero_1:0}
+getReg(_res_0)
+getReg(_zero_1)
+Exec 3:param _res_0 1, { _res_0:8 _zero_1:0 a:8}
+Exec 4:const _zero_2 0, { _res_0:7 _zero_1:0 a:8}
+Exec 5:add b _res_0 _zero_2, { _res_0:7 _zero_1:0 _zero_2:0 a:8}
+getReg(_res_0)
+getReg(_zero_2)
+Exec 6:const _res_0 0, { _res_0:7 _zero_1:0 _zero_2:0 a:8 b:7}
+Exec 7:const _zero_3 0, { _res_0:0 _zero_1:0 _zero_2:0 a:8 b:7}
+Exec 8:add acc _res_0 _zero_3, { _res_0:0 _zero_1:0 _zero_2:0 _zero_3:0 a:8 b:7}
+getReg(_res_0)
+getReg(_zero_3)
+Exec 9:const _zero_5 0, { _res_0:0 _zero_1:0 _zero_2:0 _zero_3:0 a:8 acc:0 b:7}
+Exec 10:add _res_0 b _zero_5, { _res_0:0 _zero_1:0 _zero_2:0 _zero_3:0 _zero_5:0 a:8 acc:0 b:7}
+getReg(b)
+getReg(_zero_5)
+Exec 11:const _zero_6 0, { _res_0:7 _zero_1:0 _zero_2:0 _zero_3:0 _zero_5:0 a:8 acc:0 b:7}
+Exec 12:, { _res_0:7 _zero_1:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 a:8 acc:0 b:7}
+getReg(_res_0)
+getReg(_zero_6)
+Exec 13:const _zero_8 0, { _res_0:7 _zero_1:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 a:8 acc:0 b:7}
+Exec 14:const _zero_9 0, { _res_0:7 _zero_1:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 a:8 acc:0 b:7}
+Exec 15:add _res_0 acc _zero_9, { _res_0:7 _zero_1:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:0 b:7}
+getReg(acc)
+getReg(_zero_9)
+Exec 16:add _res_10 _res_0 _zero_8, { _res_0:0 _zero_1:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:0 b:7}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 17:const _zero_11 0, { _res_0:0 _res_10:0 _zero_1:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:0 b:7}
+Exec 18:add _res_0 a _zero_11, { _res_0:0 _res_10:0 _zero_1:0 _zero_11:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:0 b:7}
+getReg(a)
+getReg(_zero_11)
+Exec 19:add _res_12 _res_0 _zero_8, { _res_0:8 _res_10:0 _zero_1:0 _zero_11:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:0 b:7}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 20:add _res_0 _res_10 _res_12, { _res_0:8 _res_10:0 _res_12:8 _zero_1:0 _zero_11:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:0 b:7}
+getReg(_res_10)
+getReg(_res_12)
+Exec 21:const _zero_13 0, { _res_0:8 _res_10:0 _res_12:8 _zero_1:0 _zero_11:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:0 b:7}
+Exec 22:add acc _res_0 _zero_13, { _res_0:8 _res_10:0 _res_12:8 _zero_1:0 _zero_11:0 _zero_13:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:0 b:7}
+getReg(_res_0)
+getReg(_zero_13)
+Exec 23:const _zero_14 0, { _res_0:8 _res_10:0 _res_12:8 _zero_1:0 _zero_11:0 _zero_13:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:7}
+Exec 24:const _zero_15 0, { _res_0:8 _res_10:0 _res_12:8 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:7}
+Exec 25:add _res_0 b _zero_15, { _res_0:8 _res_10:0 _res_12:8 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:7}
+getReg(b)
+getReg(_zero_15)
+Exec 26:add _res_16 _res_0 _zero_14, { _res_0:7 _res_10:0 _res_12:8 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:7}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 27:const _res_0 -1, { _res_0:7 _res_10:0 _res_12:8 _res_16:7 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:7}
+Exec 28:add _res_17 _res_0 _zero_14, { _res_0:-1 _res_10:0 _res_12:8 _res_16:7 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:7}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 29:add _res_0 _res_16 _res_17, { _res_0:-1 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:7}
+getReg(_res_16)
+getReg(_res_17)
+Exec 30:const _zero_18 0, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:7}
+Exec 31:add b _res_0 _zero_18, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:7}
+getReg(_res_0)
+getReg(_zero_18)
+Exec 32:, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+getReg(_zero_6)
+getReg(_zero_6)
+Exec 9:const _zero_5 0, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+Exec 10:add _res_0 b _zero_5, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+getReg(b)
+getReg(_zero_5)
+Exec 11:const _zero_6 0, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+Exec 12:, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+getReg(_res_0)
+getReg(_zero_6)
+Exec 13:const _zero_8 0, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+Exec 14:const _zero_9 0, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+Exec 15:add _res_0 acc _zero_9, { _res_0:6 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+getReg(acc)
+getReg(_zero_9)
+Exec 16:add _res_10 _res_0 _zero_8, { _res_0:8 _res_10:0 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 17:const _zero_11 0, { _res_0:8 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+Exec 18:add _res_0 a _zero_11, { _res_0:8 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+getReg(a)
+getReg(_zero_11)
+Exec 19:add _res_12 _res_0 _zero_8, { _res_0:8 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 20:add _res_0 _res_10 _res_12, { _res_0:8 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+getReg(_res_10)
+getReg(_res_12)
+Exec 21:const _zero_13 0, { _res_0:16 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+Exec 22:add acc _res_0 _zero_13, { _res_0:16 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:8 b:6}
+getReg(_res_0)
+getReg(_zero_13)
+Exec 23:const _zero_14 0, { _res_0:16 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:6}
+Exec 24:const _zero_15 0, { _res_0:16 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:6}
+Exec 25:add _res_0 b _zero_15, { _res_0:16 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:6}
+getReg(b)
+getReg(_zero_15)
+Exec 26:add _res_16 _res_0 _zero_14, { _res_0:6 _res_10:8 _res_12:8 _res_16:7 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:6}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 27:const _res_0 -1, { _res_0:6 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:6}
+Exec 28:add _res_17 _res_0 _zero_14, { _res_0:-1 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:6}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 29:add _res_0 _res_16 _res_17, { _res_0:-1 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:6}
+getReg(_res_16)
+getReg(_res_17)
+Exec 30:const _zero_18 0, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:6}
+Exec 31:add b _res_0 _zero_18, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:6}
+getReg(_res_0)
+getReg(_zero_18)
+Exec 32:, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+getReg(_zero_6)
+getReg(_zero_6)
+Exec 9:const _zero_5 0, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+Exec 10:add _res_0 b _zero_5, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+getReg(b)
+getReg(_zero_5)
+Exec 11:const _zero_6 0, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+Exec 12:, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+getReg(_res_0)
+getReg(_zero_6)
+Exec 13:const _zero_8 0, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+Exec 14:const _zero_9 0, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+Exec 15:add _res_0 acc _zero_9, { _res_0:5 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+getReg(acc)
+getReg(_zero_9)
+Exec 16:add _res_10 _res_0 _zero_8, { _res_0:16 _res_10:8 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 17:const _zero_11 0, { _res_0:16 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+Exec 18:add _res_0 a _zero_11, { _res_0:16 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+getReg(a)
+getReg(_zero_11)
+Exec 19:add _res_12 _res_0 _zero_8, { _res_0:8 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 20:add _res_0 _res_10 _res_12, { _res_0:8 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+getReg(_res_10)
+getReg(_res_12)
+Exec 21:const _zero_13 0, { _res_0:24 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+Exec 22:add acc _res_0 _zero_13, { _res_0:24 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:16 b:5}
+getReg(_res_0)
+getReg(_zero_13)
+Exec 23:const _zero_14 0, { _res_0:24 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:5}
+Exec 24:const _zero_15 0, { _res_0:24 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:5}
+Exec 25:add _res_0 b _zero_15, { _res_0:24 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:5}
+getReg(b)
+getReg(_zero_15)
+Exec 26:add _res_16 _res_0 _zero_14, { _res_0:5 _res_10:16 _res_12:8 _res_16:6 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:5}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 27:const _res_0 -1, { _res_0:5 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:5}
+Exec 28:add _res_17 _res_0 _zero_14, { _res_0:-1 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:5}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 29:add _res_0 _res_16 _res_17, { _res_0:-1 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:5}
+getReg(_res_16)
+getReg(_res_17)
+Exec 30:const _zero_18 0, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:5}
+Exec 31:add b _res_0 _zero_18, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:5}
+getReg(_res_0)
+getReg(_zero_18)
+Exec 32:, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+getReg(_zero_6)
+getReg(_zero_6)
+Exec 9:const _zero_5 0, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+Exec 10:add _res_0 b _zero_5, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+getReg(b)
+getReg(_zero_5)
+Exec 11:const _zero_6 0, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+Exec 12:, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+getReg(_res_0)
+getReg(_zero_6)
+Exec 13:const _zero_8 0, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+Exec 14:const _zero_9 0, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+Exec 15:add _res_0 acc _zero_9, { _res_0:4 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+getReg(acc)
+getReg(_zero_9)
+Exec 16:add _res_10 _res_0 _zero_8, { _res_0:24 _res_10:16 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 17:const _zero_11 0, { _res_0:24 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+Exec 18:add _res_0 a _zero_11, { _res_0:24 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+getReg(a)
+getReg(_zero_11)
+Exec 19:add _res_12 _res_0 _zero_8, { _res_0:8 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 20:add _res_0 _res_10 _res_12, { _res_0:8 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+getReg(_res_10)
+getReg(_res_12)
+Exec 21:const _zero_13 0, { _res_0:32 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+Exec 22:add acc _res_0 _zero_13, { _res_0:32 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:24 b:4}
+getReg(_res_0)
+getReg(_zero_13)
+Exec 23:const _zero_14 0, { _res_0:32 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:4}
+Exec 24:const _zero_15 0, { _res_0:32 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:4}
+Exec 25:add _res_0 b _zero_15, { _res_0:32 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:4}
+getReg(b)
+getReg(_zero_15)
+Exec 26:add _res_16 _res_0 _zero_14, { _res_0:4 _res_10:24 _res_12:8 _res_16:5 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:4}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 27:const _res_0 -1, { _res_0:4 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:4}
+Exec 28:add _res_17 _res_0 _zero_14, { _res_0:-1 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:4}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 29:add _res_0 _res_16 _res_17, { _res_0:-1 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:4}
+getReg(_res_16)
+getReg(_res_17)
+Exec 30:const _zero_18 0, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:4}
+Exec 31:add b _res_0 _zero_18, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:4}
+getReg(_res_0)
+getReg(_zero_18)
+Exec 32:, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+getReg(_zero_6)
+getReg(_zero_6)
+Exec 9:const _zero_5 0, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+Exec 10:add _res_0 b _zero_5, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+getReg(b)
+getReg(_zero_5)
+Exec 11:const _zero_6 0, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+Exec 12:, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+getReg(_res_0)
+getReg(_zero_6)
+Exec 13:const _zero_8 0, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+Exec 14:const _zero_9 0, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+Exec 15:add _res_0 acc _zero_9, { _res_0:3 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+getReg(acc)
+getReg(_zero_9)
+Exec 16:add _res_10 _res_0 _zero_8, { _res_0:32 _res_10:24 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 17:const _zero_11 0, { _res_0:32 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+Exec 18:add _res_0 a _zero_11, { _res_0:32 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+getReg(a)
+getReg(_zero_11)
+Exec 19:add _res_12 _res_0 _zero_8, { _res_0:8 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 20:add _res_0 _res_10 _res_12, { _res_0:8 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+getReg(_res_10)
+getReg(_res_12)
+Exec 21:const _zero_13 0, { _res_0:40 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+Exec 22:add acc _res_0 _zero_13, { _res_0:40 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:32 b:3}
+getReg(_res_0)
+getReg(_zero_13)
+Exec 23:const _zero_14 0, { _res_0:40 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:3}
+Exec 24:const _zero_15 0, { _res_0:40 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:3}
+Exec 25:add _res_0 b _zero_15, { _res_0:40 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:3}
+getReg(b)
+getReg(_zero_15)
+Exec 26:add _res_16 _res_0 _zero_14, { _res_0:3 _res_10:32 _res_12:8 _res_16:4 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:3}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 27:const _res_0 -1, { _res_0:3 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:3}
+Exec 28:add _res_17 _res_0 _zero_14, { _res_0:-1 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:3}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 29:add _res_0 _res_16 _res_17, { _res_0:-1 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:3}
+getReg(_res_16)
+getReg(_res_17)
+Exec 30:const _zero_18 0, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:3}
+Exec 31:add b _res_0 _zero_18, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:3}
+getReg(_res_0)
+getReg(_zero_18)
+Exec 32:, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+getReg(_zero_6)
+getReg(_zero_6)
+Exec 9:const _zero_5 0, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+Exec 10:add _res_0 b _zero_5, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+getReg(b)
+getReg(_zero_5)
+Exec 11:const _zero_6 0, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+Exec 12:, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+getReg(_res_0)
+getReg(_zero_6)
+Exec 13:const _zero_8 0, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+Exec 14:const _zero_9 0, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+Exec 15:add _res_0 acc _zero_9, { _res_0:2 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+getReg(acc)
+getReg(_zero_9)
+Exec 16:add _res_10 _res_0 _zero_8, { _res_0:40 _res_10:32 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 17:const _zero_11 0, { _res_0:40 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+Exec 18:add _res_0 a _zero_11, { _res_0:40 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+getReg(a)
+getReg(_zero_11)
+Exec 19:add _res_12 _res_0 _zero_8, { _res_0:8 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 20:add _res_0 _res_10 _res_12, { _res_0:8 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+getReg(_res_10)
+getReg(_res_12)
+Exec 21:const _zero_13 0, { _res_0:48 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+Exec 22:add acc _res_0 _zero_13, { _res_0:48 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:40 b:2}
+getReg(_res_0)
+getReg(_zero_13)
+Exec 23:const _zero_14 0, { _res_0:48 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:2}
+Exec 24:const _zero_15 0, { _res_0:48 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:2}
+Exec 25:add _res_0 b _zero_15, { _res_0:48 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:2}
+getReg(b)
+getReg(_zero_15)
+Exec 26:add _res_16 _res_0 _zero_14, { _res_0:2 _res_10:40 _res_12:8 _res_16:3 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:2}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 27:const _res_0 -1, { _res_0:2 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:2}
+Exec 28:add _res_17 _res_0 _zero_14, { _res_0:-1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:2}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 29:add _res_0 _res_16 _res_17, { _res_0:-1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:2}
+getReg(_res_16)
+getReg(_res_17)
+Exec 30:const _zero_18 0, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:2}
+Exec 31:add b _res_0 _zero_18, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:2}
+getReg(_res_0)
+getReg(_zero_18)
+Exec 32:, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+getReg(_zero_6)
+getReg(_zero_6)
+Exec 9:const _zero_5 0, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+Exec 10:add _res_0 b _zero_5, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+getReg(b)
+getReg(_zero_5)
+Exec 11:const _zero_6 0, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+Exec 12:, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+getReg(_res_0)
+getReg(_zero_6)
+Exec 13:const _zero_8 0, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+Exec 14:const _zero_9 0, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+Exec 15:add _res_0 acc _zero_9, { _res_0:1 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+getReg(acc)
+getReg(_zero_9)
+Exec 16:add _res_10 _res_0 _zero_8, { _res_0:48 _res_10:40 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 17:const _zero_11 0, { _res_0:48 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+Exec 18:add _res_0 a _zero_11, { _res_0:48 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+getReg(a)
+getReg(_zero_11)
+Exec 19:add _res_12 _res_0 _zero_8, { _res_0:8 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+getReg(_res_0)
+getReg(_zero_8)
+Exec 20:add _res_0 _res_10 _res_12, { _res_0:8 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+getReg(_res_10)
+getReg(_res_12)
+Exec 21:const _zero_13 0, { _res_0:56 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+Exec 22:add acc _res_0 _zero_13, { _res_0:56 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:48 b:1}
+getReg(_res_0)
+getReg(_zero_13)
+Exec 23:const _zero_14 0, { _res_0:56 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:1}
+Exec 24:const _zero_15 0, { _res_0:56 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:1}
+Exec 25:add _res_0 b _zero_15, { _res_0:56 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:1}
+getReg(b)
+getReg(_zero_15)
+Exec 26:add _res_16 _res_0 _zero_14, { _res_0:1 _res_10:48 _res_12:8 _res_16:2 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:1}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 27:const _res_0 -1, { _res_0:1 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:1}
+Exec 28:add _res_17 _res_0 _zero_14, { _res_0:-1 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:1}
+getReg(_res_0)
+getReg(_zero_14)
+Exec 29:add _res_0 _res_16 _res_17, { _res_0:-1 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:1}
+getReg(_res_16)
+getReg(_res_17)
+Exec 30:const _zero_18 0, { _res_0:0 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:1}
+Exec 31:add b _res_0 _zero_18, { _res_0:0 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:1}
+getReg(_res_0)
+getReg(_zero_18)
+Exec 32:, { _res_0:0 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:0}
+getReg(_zero_6)
+getReg(_zero_6)
+Exec 9:const _zero_5 0, { _res_0:0 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:0}
+Exec 10:add _res_0 b _zero_5, { _res_0:0 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:0}
+getReg(b)
+getReg(_zero_5)
+Exec 11:const _zero_6 0, { _res_0:0 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:0}
+Exec 12:, { _res_0:0 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:0}
+getReg(_res_0)
+getReg(_zero_6)
+Exec 33:const _zero_19 0, { _res_0:0 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:0}
+Exec 34:add _res_0 acc _zero_19, { _res_0:0 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_19:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:0}
+getReg(acc)
+getReg(_zero_19)
+Exec 35:, { _res_0:56 _res_10:48 _res_12:8 _res_16:1 _res_17:-1 _zero_1:0 _zero_11:0 _zero_13:0 _zero_14:0 _zero_15:0 _zero_18:0 _zero_19:0 _zero_2:0 _zero_3:0 _zero_5:0 _zero_6:0 _zero_8:0 _zero_9:0 a:8 acc:56 b:0}
+getReg(_res_0)
